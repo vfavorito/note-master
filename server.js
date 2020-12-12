@@ -7,8 +7,9 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // bininging in middleware
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static("public"));
 
 // start the server listining on PORT
 app.listen(PORT,function(){
@@ -20,10 +21,10 @@ let notes = [];
 
 //HTML routes
 app.get("/", function(req,res){
-    res.sendFile(path.join(__dirname,"/public/index.html"));
+    res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 app.get("/notes", function(req,res){
-    res.sendFile(path.join(__dirname,"/public/notes.html"));
+    res.sendFile(path.join(__dirname, "/public/notes.html"));
 });
 
 //api routes
