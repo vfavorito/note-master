@@ -11,3 +11,11 @@ app.use(express.json());
 app.listen(PORT,function(){
     console.log("Server launched on PORT:" + PORT);
 });
+
+//HTML routes
+app.get("/", function(req,res){
+    res.sendFile(path.join(__dirname,"public/index.html"));
+});
+app.get("/notes", function(req,res){
+    res.sendFile(path.join(__dirname,"public/notes.html"));
+});
