@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview:
-The Note Master provides a simple to use interface to both create and delete notes!  After a note is saved the note will be displayed on the screen as well as be sent to a JSON database file so even after closing the app the note will remain there until it is manually deleted.  This was primarily accomplished using an express server with get, post, and delete requests.    
+The Note Master provides a simple to use interface to both create and delete notes!  After a note is saved the note will be displayed on the screen as well as be sent to a JSON file so even after changing pages on the app the note will remain there until it is manually deleted.  This was primarily accomplished using an express server with get, post, and delete requests.    
 
 ### Table of Contents:
 1. [How it works](#How-it-works)
